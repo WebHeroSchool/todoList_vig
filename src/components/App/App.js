@@ -6,6 +6,8 @@ import ItemList from '../ItemList/ItemList';
 import InputItem from '../InputItem/InputItem';
 import Footer from '../Footer/Footer';
 
+import Paper from '@material-ui/core/Paper';
+
 function App() {
 
   const items = [
@@ -24,12 +26,12 @@ function App() {
   ];
 
   return (
-    <div className={styles.wrapper}>
+    <Paper className={styles.wrapper} elevation={3}>
       <h1>List</h1>
       <InputItem/>
       <ItemList items={items} />
       <Footer count={3}/>
-    </div>
+    </Paper>
   );
 }
 

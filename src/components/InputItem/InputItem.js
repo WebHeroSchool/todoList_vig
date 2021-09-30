@@ -1,9 +1,14 @@
 import React from 'react';
+import TextField from '@material-ui/core/TextField'
 
 function InputItem() {
-  return (<div>
-    InputItem
-  </div>)
+  return (
+    <TextField
+      id="outlined-basic"
+      label="Outlined"
+      variant="outlined"
+    />
+  )
 }
 
 export default InputItem;
